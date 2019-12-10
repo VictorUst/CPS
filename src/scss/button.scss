@@ -1,0 +1,43 @@
+.btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 24px;
+  text-align: right;
+  color: #1b1c21;
+
+  &::after {
+    content: "";
+    min-height: 40px;
+    min-width: 40px;
+    background: #ff3e79 center no-repeat;
+    border-radius: 50%;
+  }
+
+  &:hover::after {
+    transform: scale(1.2);
+  }
+
+  &--close::after {
+    background-image: url("img/close.svg");
+  }
+
+  &-search::after {
+    background-image: url("img/search.svg");
+  }
+
+  &--phone::after {
+    background-image: url("img/phone.svg");
+  }
+
+  &--message::after {
+    background-image: url("img/message.svg");
+  }
+
+  &--profile::after {
+    background-image: url("img/profile.svg");
+  }
+}
