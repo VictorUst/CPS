@@ -1,0 +1,45 @@
+@import "vars";
+
+.about-company {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+
+  &__title {
+    font-size: 0;
+  }
+
+  &__text-container {
+    padding-right: 36px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: $textColor;
+  }
+
+  &__logo {
+    width: 150%;
+
+    & img {
+      border-radius: 6px;
+    }
+  }
+
+  &__btn-more--hidden:nth-child(n + 3) {
+    display: none;
+  }
+
+  @media screen and (max-width: 320px) {
+    flex-direction: column;
+
+    &__btn-more--hidden:nth-child(n + 2) {
+      display: none;
+    }
+
+    &__logo {
+      width: 100%;
+    }
+  }
+}

@@ -1,3 +1,7 @@
 import '../scss/style.scss';
-
-console.log('Works!');
+import '../js/brandsView.js';
+import '../js/moreView.js';
+import '../js/typesTechView.js';
+import '../js/sidebarMenu.js';
+import '../js/modalCall.js';
+import '../js/modalFeel.js';

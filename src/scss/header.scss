@@ -1,0 +1,57 @@
+@import "vars";
+
+.page-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 24px;
+  background: $bgSupColor;
+
+  @media screen and (min-width: 1366px) {
+    display: none;
+  }
+
+  &__logo,
+  &__btns-orders {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    &::before {
+      content: "";
+      margin-right: 20px;
+      width: 2px;
+      height: 32px;
+      background: $bordElemColor;
+
+      @media screen and (max-width: 767px) {
+        content: none;
+      }
+    }
+  }
+
+  &__logo {
+    flex-grow: 2;
+
+    @media screen and (max-width: 767px) {
+      &::after {
+        content: "";
+        margin-left: 20px;
+        width: 2px;
+        height: 32px;
+        background: $bordElemColor;
+      }
+    }
+  }
+
+  &__logo-link {
+    display: inline-block;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    &__btns-contacts {
+      display: none;
+    }
+  }
+}

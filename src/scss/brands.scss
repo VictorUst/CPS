@@ -1,0 +1,58 @@
+@import "vars";
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  border-top: 1px solid $delimiterColor;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    background: $bgSupColor;
+    border: 1px solid $bordElemColor;
+    border-radius: 6px;
+
+    @media screen and (max-width: 1365px) {
+      width: 224px;
+      margin-right: 8px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .brands__btn-more--hidden:nth-child(n+9) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .brands__btn-more--hidden:nth-child(n+7) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .brands__btn-more--hidden:nth-child(n + 3) {
+    display: none;
+  }
+}
