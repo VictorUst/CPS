@@ -427,7 +427,8 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     list-style: none;
-    padding: 0; }
+    padding: 0;
+    overflow: hidden; }
     @media screen and (max-width: 321px) {
       .main__list {
         -ms-flex-wrap: nowrap;
