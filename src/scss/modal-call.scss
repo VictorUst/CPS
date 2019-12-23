@@ -13,10 +13,10 @@
   background: $bgSupColor;
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
     -2px 0px 4px #454f7e05;
-  overflow: auto;
   transition: 1s;
 
   @media screen and (max-width: 1365px) {
+    overflow: auto;
     width: 320px;
     padding: 100px 16px 0;
   }
@@ -27,6 +27,7 @@
   }
 
   &__btn--close {
+    overflow: visible;
     position: absolute;
     top: 48px;
     right: 472px;
