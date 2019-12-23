@@ -7,10 +7,16 @@ btnShowModal.forEach(function (item) {
   item.addEventListener('click', function () {
     modalElem.classList.add('modal-call--active');
     overlay.classList.add('overlay--active');
+    document.body.classList.add('fixed');
   });
 });
 
 btnCloseModal.addEventListener('click', function () {
+  modalElem.classList.remove('modal-call--active');
+  overlay.classList.remove('overlay--active');
+});
+
+overlay.addEventListener('click', function () {
   modalElem.classList.remove('modal-call--active');
   overlay.classList.remove('overlay--active');
 });
