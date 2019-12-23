@@ -635,7 +635,7 @@ img {
         align-self: flex-end; }
 
 @media screen and (min-width: 770px) {
-  .types-tech__btn-more--hidden:nth-child(n+5) {
+  .types-tech__btn-more--hidden:nth-child(n + 5) {
     display: none; }
   .types-tech {
     -webkit-box-orient: vertical;
@@ -644,7 +644,7 @@ img {
             flex-direction: column; } }
 
 @media screen and (min-width: 321) {
-  .types-tech__btn-more--hidden:nth-child(n+4) {
+  .types-tech__btn-more--hidden:nth-child(n + 4) {
     display: none; } }
 
 .price {
@@ -842,12 +842,12 @@ img {
   background: #FFFFFF;
   -webkit-box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px #454f7e05;
           box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px #454f7e05;
-  overflow: auto;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s; }
   @media screen and (max-width: 1365px) {
     .modal-call {
+      overflow: auto;
       width: 320px;
       padding: 100px 16px 0; } }
   .modal-call--active {
@@ -858,6 +858,7 @@ img {
     -o-transition: 500ms;
     transition: 500ms; }
   .modal-call__btn--close {
+    overflow: visible;
     position: absolute;
     top: 48px;
     right: 472px; }
@@ -955,10 +956,10 @@ img {
           box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
   -webkit-transition: 1s;
   -o-transition: 1s;
-  transition: 1s;
-  overflow: auto; }
+  transition: 1s; }
   @media screen and (max-width: 1365px) {
     .modal-feel {
+      overflow: auto;
       width: 320px;
       padding: 100px 16px 0; } }
   .modal-feel--active {
