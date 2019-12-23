@@ -4,6 +4,10 @@
   padding: 0 32px;
   order: 2;
 
+  @media screen and (max-width: 320px) {
+    padding: 0 16px;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -37,16 +41,22 @@
     }
   }
 
-  &__nav {
+  &__list {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
+
+
+    @media screen and (max-width: 321px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
+    display: inline-block;
     margin: 12px 0;
   }
 
@@ -57,6 +67,7 @@
     color: $textSupColor;
     padding: 8px 16px;
     border: 2px solid transparent;
+    white-space: nowrap;
 
 
     &:focus,
